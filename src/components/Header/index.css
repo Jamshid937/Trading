@@ -1,0 +1,173 @@
+.header_bg_img{
+  background-image: url('https://static.tildacdn.com/tild3738-6432-4836-a565-646164323331/U1c.gif');
+  width: 100%;
+  height: 1088px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity:0.9;
+
+}
+.header__title{
+    color: #ffffff;
+    font-size: 110px;
+    font-family: 'cygrotesk',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-align: center;
+    padding-top: 40px;
+}
+.header__text{
+display: flex;
+justify-content: space-between;
+width: 70%;
+margin: 0 auto;
+}
+.header__text>p{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.15;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.header_bg2_img{
+background-image: url("../../Imgs/bgTransparent.png");
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.rounded-text {
+    max-width:30.625rem ;
+    width:100% ;
+    text-transform: uppercase;
+    transform: rotate(-103deg);
+    color: #fff;
+    font-weight: bold;
+    z-index: -1;
+    font-family: sans-serif;
+  }
+  
+  @keyframes rotating {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  .rotating {
+    animation: rotating 12s linear infinite ;
+    color: #fff;
+  }
+  @keyframes coloring {
+    0% {
+        fill: #fff;
+      }
+      35% {
+        fill: #fff;
+      }
+      75% {
+        fill: #fff;
+      }
+      100% {
+        fill: #fff;
+      }
+    }
+  
+  .coloring {
+    animation:  coloring 12s linear infinite;
+    color: #ffffff;
+  }
+.animation_text{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.header__img{
+position: absolute;
+bottom: 66px;
+}
+
+.header__card{
+display: flex;
+width: 70%;
+justify-content: space-around;
+align-items: center;
+margin: -130px auto;
+backdrop-filter: blur(25.448572158813477px);
+background: rgba(228, 228, 228, 0.2);
+border-radius: 25px;
+padding: 15px 35px;
+}
+.header__card>div>p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.header__card>div{
+    max-width: 219px;
+    width: 100%;
+}
+.header__card>div>button{
+    color: #171717;
+    padding: 10px 45px;
+    font-size: 24px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    border-radius: 12px;
+    background-color: #66d778;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 1px 5px 20px 10px rgba(102,215,120,0.3);
+}
+.border{
+ border-left: 2px solid #ffffff;
+ padding-left: 20px;
+}
+.header__bottom{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+margin-top:210px ;
+}
+.header__bottom>div{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+box-shadow: 3px 1px 24px 30px rgba(102,215,120,0.3);
+}
+.header__bottom>div>img{
+width: 100px;
+}
+.header__bottom>p{
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    max-width: 556px;
+    width: 100%;
+}

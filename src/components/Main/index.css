@@ -1,0 +1,124 @@
+.main {
+    border-width: 2px;
+    border-radius: 64px;
+    background-position: center center;
+    border-color: #66d778;
+    border-style: solid;
+    margin-top: 100px;
+    padding: 50px;
+    backdrop-filter: blur(25.448572158813477px);
+    background: rgb(151 149 149 / 20%);
+}
+
+.main_size {
+    padding: 80px 0;
+}
+
+.main>h2 {
+    max-width: 560px;
+    width: 100%;
+    color: #fcfcfc;
+    font-size: 60px;
+    font-family: 'cygrotesk', Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main_card_box {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+}
+
+.main_card {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.main_card_box>p {
+    color: #fcfcfc;
+    font-size: 18px;
+    font-family: 'TildaSans', Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    max-width: 201px;
+    width: 100%;
+}
+
+.main__bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Imgs/Group.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_bootom_title{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'cygrotesk',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-align: center;
+}
+.main__bottom__cards{
+display: flex;
+justify-content: center;
+margin: 90px auto;
+}
+
+.main__bottom__card{
+display: flex;
+gap: 15px;
+margin-top: 20px;
+}
+.main__bottom__cards__num{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #66d778;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    box-shadow: 0px 0px 20px 5px rgba(102,215,120,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    font-size: 30px;
+    font-family: 'cygrotesk',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: 0.8;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.main__bottom__cards__text{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    max-width: 347px;
+    width: 100%;
+}
+

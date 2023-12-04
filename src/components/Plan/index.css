@@ -1,0 +1,36 @@
+.plan_title{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'cygrotesk',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    text-align: center;
+    margin-top: 50px;
+    opacity: 1 !important;
+}
+.plan_title>span{
+    color: rgb(13, 222, 124);
+}
+.plan_bg{
+background-image: url('../../Imgs/darkBackground.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+border-radius: 64px;
+background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+border-color: transparent;
+border-style: solid;
+}
+.plan_bg2{
+    background-image: url('../../Imgs/bgTransparent.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
