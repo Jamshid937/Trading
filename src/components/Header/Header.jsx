@@ -35,7 +35,7 @@ const Header = () => {
                                 Получи <br /> проверенные сигналы и инсайдыНачать
                                 </p>
                             </div>
-                            <div className='border'>
+                            <div className='header_border'>
                                 <p>Освой главные инструменты трейдинга</p>
                             </div>
                             <div>

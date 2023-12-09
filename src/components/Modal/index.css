@@ -1,0 +1,103 @@
+.modal_title{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'cygrotesk',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    max-width: 921px;
+    width: 100%;
+    text-align: center;
+    margin: 80px auto;
+}
+.modal_btn{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal_btn_text{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal_cards{
+display: flex;
+overflow-x: scroll;
+gap: 20px;
+scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+    }
+.modal_card{
+    min-width: 359px;
+    border-width: 2px;
+    border-radius: 34px;
+    background-position: center center;
+    border-color: #66d778;
+    border-style: solid;
+    margin-top: 100px;
+    padding: 30px;
+    -webkit-backdrop-filter: blur(25.448572158813477px);
+    backdrop-filter: blur(25.448572158813477px);
+    background: rgb(151 149 149 / 20%);
+
+}
+.modal_card_btn{
+    color: #171717;
+    font-size: 18px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    border-radius: 12px;
+    background-color: #66d778;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 1px 5px 30px 20px rgba(102,215,120,0.2);
+    width: 50%;
+    text-align: center;
+    padding: 6px 0;
+}
+.modal_card>h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'cygrotesk',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    margin-top: 20px;
+}
+span{
+    color: rgb(102, 215, 120);
+}
+.modal_card_list{
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.25;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+  
+}
+.modal_card_list_item{
+margin-top: 20px;
+}

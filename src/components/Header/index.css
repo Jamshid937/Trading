@@ -136,7 +136,7 @@ padding: 15px 35px;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     box-shadow: 1px 5px 20px 10px rgba(102,215,120,0.3);
 }
-.border{
+.header_border{
  border-left: 2px solid #ffffff;
  padding-left: 20px;
 }
