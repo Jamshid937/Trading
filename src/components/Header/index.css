@@ -158,6 +158,7 @@ box-shadow: 3px 1px 24px 30px rgba(102,215,120,0.3);
 }
 .header__bottom>div>img{
 width: 100px;
+max-width: none;
 }
 .header__bottom>p{
     color: #ffffff;
