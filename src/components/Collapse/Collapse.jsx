@@ -1,19 +1,17 @@
 import React from 'react'
 import './index.css'
 import vektor from '../../Imgs/vektor.svg'
-import { useState } from 'react'
+
 const Collapse = () => {
-    const [collapse, setCollapce] = useState(false)
+
     const faqs = document.querySelectorAll(".faq");
 
-
-
-
-    faqs.forEach(faq => {
+    faqs.forEach(faq =>{
         faq.addEventListener("click", () => {
-            faq.classList.toggle("active");
-        });
-    })
+          faq.classList.toggle("active");
+      });
+      });
+
     return (
         <div>
             <div className='faq'>
