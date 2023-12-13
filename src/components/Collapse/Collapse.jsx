@@ -1,76 +1,60 @@
 import React from 'react'
 import './index.css'
 import vektor from '../../Imgs/vektor.svg'
+import { useState } from 'react'
 
 const Collapse = () => {
-
-    const faqs = document.querySelectorAll(".faq");
-
-    faqs.forEach(faq =>{
-        faq.addEventListener("click", () => {
-          faq.classList.toggle("active");
-      });
-      });
+const [isOpen, setIsOpen] = useState(null)
+    
+const toggle = (i) => {
+if(isOpen === i){
+  return setIsOpen(null)
+}
+setIsOpen(i)
+}
 
     return (
-        <div>
-            <div className='faq'>
-                <div className="question">
-                    <img src={vektor} alt="" />
-                    <h3>Есть ли у вас инженеры в компании?</h3>
+      <>
+      <h2 className='collapse_title'>ОТВЕТЫ НА ПОПУЛЯРНЫЕ ВОПРОСЫ</h2>
+        {data.map((item ,i)=>(
+         <div className={isOpen === i ? 'faq active':'faq'}>
+            <div className="question" onClick={()=> toggle(i)}>
+                <h3>{item.question}</h3>
+                <img src={vektor} alt="" />
                 </div>
-                <div className="ansver">
+                <div className='ansver'>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet.
+                        {item.ansver}
                     </p>
                 </div>
             </div>
-            <div className="faq">
-                <div className="question">
-                    <img src={vektor} alt="" />
-                    <h3>Делаете ли вы отчистку газгольдера?</h3>
-                </div>
-                <div className="ansver">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-            </div>
-            <div className="faq">
-                <div className="question">
-                    <img src={vektor} alt="" />
-                    <h3>А вы не испортите газон у меня и соседей?</h3>
-                </div>
-                <div className="ansver">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-            </div>
-            <div className="faq">
-                <div className="question">
-                    <img src={vektor} alt="" />
-                    <h3>Вы предоставляете документы для субсидий?</h3>
-                </div>
-                <div className="ansver">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-            </div>
-            <div className="faq">
-                <div className="question">
-                    <img src={vektor} alt="" />
-                    <h3>Смогу ли я заказать во время праздников?</h3>
-                </div>
-                <div className="ansver">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
-            </div>
-        </div>
+        ))}
+
+       </>
     )
 }
+
+const data = [
+{
+question: "Смогу ли я заказать во время праздников?",
+ansver:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet."
+},
+{
+    question: "Смогу ли я заказать во время праздников?",
+    ansver:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet."
+},
+{
+    question: "Смогу ли я заказать во время праздников?",
+    ansver:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet." 
+},
+{
+    question: "Смогу ли я заказать во время праздников?",
+    ansver:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet."
+},
+{
+    question: "Смогу ли я заказать во время праздников?",
+    ansver:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, vel. Lorem ipsum dolor sit amet."
+    },
+]
 
 export default Collapse
