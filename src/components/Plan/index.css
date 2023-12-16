@@ -11,6 +11,7 @@
     text-align: center;
     margin-top: 50px;
     opacity: 1 !important;
+    padding-top: 30px;
 }
 
 .plan_title>span {
@@ -29,6 +30,7 @@
     background-repeat: no-repeat;
     border-color: transparent;
     border-style: solid;
+    padding-bottom: 30px;
 }
 
 .plan_bg2 {

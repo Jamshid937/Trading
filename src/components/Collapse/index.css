@@ -1,20 +1,21 @@
-.faq{
+.faq {
     max-width: 800px;
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff;
     cursor: pointer;
     margin: 0 auto;
-   }
+}
 
-   .question{
-   display: flex;
-   justify-content: space-between;
-   }
-   .collapse_title{
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse_title {
     color: #ffffff;
     font-size: 40px;
-    font-family: 'cygrotesk',Arial,sans-serif;
+    font-family: 'cygrotesk', Arial, sans-serif;
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
@@ -22,52 +23,57 @@
     border-color: transparent;
     border-style: solid;
     text-align: center;
-    padding: 100px  0;
+    padding: 100px 0;
 }
-   .question>h3{
-   padding-bottom: 20px;
-   padding-top: 20px;
-   font-family: 'Open Sans';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 22px;
-   text-transform: uppercase;
-   color: #F1F1F1;
-   }
-   .ansver{
-   max-height: 0;
-   overflow: hidden;
-   transition: max-height 1.4s ease;
-   }
-   .ansver > p{
-       font-family: 'Open Sans';
-       font-style: normal;
-       font-weight: 300;
-       font-size: 16px;
-       line-height: 22px;
-       color: #F1F1F1;
-   }
-   .faq.active .ansver{
-   max-height: 300px;
-   animation: fade 1s ease-in-out;
-   }
-   .faq.active img{
-   transform: rotate(180deg);
-   }
-   
-   img{
-   transition: transform 0.5s ease-in;
-   }
-   
-   
-   @keyframes fade {
-    from{
-    opacity: 0;
-    transform: translateY(-10px);
-   }
-   to{
-   opacity: 1;
-   transform: translateY(0px);
-   }
-   }
+
+.question>h3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #F1F1F1;
+}
+
+.ansver {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.ansver>p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F1F1F1;
+}
+
+.faq.active .ansver {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+}
+
+.faq.active img {
+    transform: rotate(180deg);
+}
+
+img {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

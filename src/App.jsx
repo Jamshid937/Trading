@@ -4,6 +4,7 @@ import Carusel from './components/Carusel/Carusel';
 import Collapse from './components/Collapse/Collapse';
 import Fakt from './components/Fakt/Fakt';
 import Header from './components/Header/Header';
+import Info from './components/Info/Info';
 import Main from './components/Main/Main';
 import Modal from './components/Modal/Modal';
 import Plan from './components/Plan/Plan';
@@ -20,6 +21,7 @@ function App() {
 <Modal></Modal>
 <Tarif/>
 <Collapse/>
+<Info></Info>
 </>
   );
 }
