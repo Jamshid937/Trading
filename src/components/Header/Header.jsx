@@ -2,14 +2,18 @@ import React from 'react'
 import Container from '../../layout/Container'
 
 import mony from '../../Imgs/mony.png'
-import brat from '../../Imgs/brat.png'
+import trader from '../../Imgs/trader.png'
 import './index.css'
+import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <div className='header_bg_img'>
             <div className='header_bg2_img'>
                 <Container>
                     <div>
+                        <Link to={'/password'} className='admin'>
+                            Admin
+                        </Link>
                         <h1 className='header__title'>CRYPTOSPACE</h1>
                         <div className='header__text'>
                             <p>система заработка<br></br> на  крипторынке</p>
@@ -27,7 +31,7 @@ const Header = () => {
                                 </g>
                             </svg>
                           </div>
-                         <img className='header__img' src={brat} alt="" /> 
+                         <img className='header__img' src={trader} alt="" /> 
                         </div>
                         <div className='header__card'>
                             <div>

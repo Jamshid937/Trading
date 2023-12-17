@@ -1,0 +1,13 @@
+.form{
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+background-color: #fff;
+border-radius: 15px;
+margin: auto auto;
+}
+.form_container{
+    height: 100vh;
+display: flex;
+align-items: center;
+}

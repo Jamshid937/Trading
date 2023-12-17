@@ -1,28 +1,28 @@
-
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
-import Carusel from './components/Carusel/Carusel';
-import Collapse from './components/Collapse/Collapse';
-import Fakt from './components/Fakt/Fakt';
-import Header from './components/Header/Header';
-import Info from './components/Info/Info';
-import Main from './components/Main/Main';
-import Modal from './components/Modal/Modal';
-import Plan from './components/Plan/Plan';
-import Tarif from './components/Tarif/Tarif';
+import Admin from './pages/Admin/Admin';
+import Home from './pages/Home/Home';
+import Password from './pages/Password/Password';
 
-function App() {
+function App () {
+  const  [token, settoken] = useState(window.localStorage.getItem('token'))
   return (
-<>
-<Header/>
-<Main/>
-<Plan/>
-<Fakt />
-<Carusel></Carusel>
-<Modal></Modal>
-<Tarif/>
-<Collapse/>
-<Info></Info>
-</>
+    <>
+      <Router>
+        <Routes>
+        <Route path='/' element={<Home />} />
+          {
+          token ? (
+            <Route path='/password' element={<Admin />} />
+            ) : (
+              <Route path='/password' element={ <Password settoken={settoken} />} />
+              )
+          }  
+        </Routes>
+      </Router>
+
+    </>
   );
 }
 
